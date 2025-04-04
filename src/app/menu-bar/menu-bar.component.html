@@ -1,0 +1,19 @@
+<nav class="menu-bar">
+  <div class="logo">
+    <app-menu-title></app-menu-title>
+  </div>
+  <div class="menu-section">
+    <ul class="menu-items">
+      <li *ngFor="let item of menuItems">
+        <a [routerLink]="item.link">{{ item.name }}</a>
+      </li>
+    </ul>
+    <ul class="auth-items">
+      <li *ngFor="let item of authItems">
+        <a [routerLink]="item.link" [class.sign-up]="item.name === 'Sign up'">{{ item.name }}</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>
+

@@ -1,0 +1,16 @@
+<div class="big-card">
+  <div class="card-image">
+    <img [src]="imageUrl" alt="Featured post image">
+  </div>
+  <div class="card-content">
+    <div class="meta">
+      <span class="author">{{ author }}</span>
+      <span class="date">{{ date }}</span>
+    </div>
+    <h2>{{ title }}</h2>
+    <p>{{ description }}</p>
+    <div class="tags">
+      <span *ngFor="let tag of tags" class="tag">{{ tag }}</span>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,90 @@
-/* You can add global styles to this file, and also import other style files */
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8f8f8;
+  color: #111;
+  line-height: 1.6;
+}
+
+/* LINKS */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* CORES AVANADE */
+:root {
+  --avanade-blue: #00188f;
+  --avanade-purple: #68217a;
+  --avanade-orange: #ff8c00;
+  --avanade-light-blue: #00bcf2;
+}
+
+/* BOTÕES GLOBAIS */
+.login-btn,
+.signup-btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.login-btn {
+  background: transparent;
+  color: var(--avanade-blue);
+  border: 1px solid var(--avanade-blue);
+}
+
+.signup-btn {
+  background: var(--avanade-blue);
+  color: #fff;
+  margin-left: 8px;
+}
+
+.login-btn:hover {
+  background: rgba(0, 24, 143, 0.1);
+}
+
+.signup-btn:hover {
+  background: #001276;
+}
+
+/* MENU BAR */
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.menu-bar .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--avanade-blue);
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-link {
+  color: #444;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--avanade-purple);
+}
